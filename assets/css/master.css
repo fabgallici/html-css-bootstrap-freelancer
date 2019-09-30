@@ -9,13 +9,21 @@
 h1, h2 {
   text-align: center;
 }
-
+h1 {
+  font-size: 350%;
+  font-weight: bolder;
+}
+h2 {
+  font-size: 180%;
+}
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #fff;
   font-size: 20px;
 }
-
+.mt-100 {
+  margin-top: 100px;
+}
 .center-star {
   text-align: center;
 }
@@ -66,8 +74,9 @@ header > .container {
 /* ------------------------------- */
 #start-section {
   background-color: #1ABC9C;
-  height: 679px;
+  height: 600px;
   color: #fff;
+  text-align: center;
 }
 #start-section .container-fluid > img {
   width: 250px;
@@ -100,7 +109,6 @@ header > .container {
 
 #about {
   background-color: #1ABC9C;
-  margin-top: 100px;
   color: #fff;
 }
 
@@ -110,6 +118,12 @@ header > .container {
   margin-right: auto;
 }
 
+/* ------------------------------- */
+/*     CONTACT ME    */
+/* ------------------------------- */
+#contact {
+
+}
 /* MEDIA QUERY */
 @media screen and (min-width:991px) {
   #about .container {
@@ -130,7 +144,7 @@ header > .container {
 
 
 @media screen and (max-width:768px) {
-  #portfolio.container {
+  #portfolio .container {
     width: 70%;
   }
 }
