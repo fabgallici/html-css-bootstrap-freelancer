@@ -15,6 +15,10 @@ body {
   font-size: 16px;
 }
 
+/* ------------------------------- */
+/*     HEADER      */
+/* ------------------------------- */
+
 header {
   background-color: #2C3E50;
   height: 100px;
@@ -52,7 +56,41 @@ header > .container {
   display: block;
 }
 
+/* ------------------------------- */
+/*     START SECTION      */
+/* ------------------------------- */
+#start-section {
+  background-color: #1ABC9C;
+  height: 679px;
+  text-align: center;
+  color: #fff;
+}
+#start-section .container-fluid > img {
+  width: 250px;
+}
 
+
+.avatar-image {
+  width: 250px;
+}
+/* .centerimg {
+  text-align: center;
+}
+#start-section .centerimg > img {
+  height: 250px;
+} */
+
+/* ------------------------------- */
+/*     START SECTION      */
+/* ------------------------------- */
+#portfolio .row img {
+  max-width: 100%;
+}
+
+
+
+
+/* MEDIA QUERY */
 
 @media screen and (max-width:991px) {
   #menu-hamburger ul {
