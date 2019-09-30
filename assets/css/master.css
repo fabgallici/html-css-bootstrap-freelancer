@@ -81,13 +81,14 @@ header > .container {
   text-align: center;
 }
 #start-section .container-fluid > img {
-  width: 250px;
+  min-width: 100px;
+  max-width: 250px;
 }
 
 
-.avatar-image {
+/* .avatar-image {
   width: 250px;
-}
+} */
 /* .centerimg {
   text-align: center;
 }
