@@ -125,6 +125,7 @@ header > .container {
 #about {
   background-color: #1ABC9C;
   color: #fff;
+  padding: 20px 0;
 }
 
 #about button {
@@ -137,7 +138,13 @@ header > .container {
 /*     CONTACT ME    */
 /* ------------------------------- */
 #contact form {
-  padding: 40px 0;
+  padding: 40px 100px 40px 0;
+}
+#contact .form-control {
+  border:0;
+  border-bottom: 1px solid;
+  height: 50px;
+  line-height: 50px;
 }
 /* ------------------------------- */
 /*     FOOTER   */
