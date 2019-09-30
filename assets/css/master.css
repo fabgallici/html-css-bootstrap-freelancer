@@ -27,6 +27,24 @@ body {
 .center-star {
   text-align: center;
 }
+.center-star:before {
+    display: inline-block;
+    height: 4px;
+    background-color: #000;
+    content: " ";
+    width: 90px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+.center-star:after {
+    display: inline-block;
+    height: 4px;
+    background-color: #000;
+    content: " ";
+    width: 90px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
 .bg-green {
   background-color: #19AB8E;
 }
@@ -36,7 +54,7 @@ body {
 
 header {
   background-color: #2C3E50;
-  height: 100px;
+  min-height: 100px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -50,21 +68,14 @@ header > .container {
 }
 #hamburger-show {
   display: none;
-  position: relative;
 }
-/* #hamburger-show i {
-  position: relative;
-} */
+
 .hamburger-dropdown {
   position: absolute;
   display: none;
-  right: 0px;
-  height: 300px;
+  right: -0px;
   z-index: 1;
   background-color: #fff;
-  padding: 5px;
-  text-align: center;
-  border: 1px solid #A99D7F;
 }
 
 #hamburger-show:hover .hamburger-dropdown {
@@ -127,30 +138,44 @@ header > .container {
 /* ------------------------------- */
 /*     CONTACT ME    */
 /* ------------------------------- */
-#contact {
-
+#contact form {
+  padding: 40px 0;
 }
 /* ------------------------------- */
 /*     FOOTER   */
 /* ------------------------------- */
 footer {
   text-align: center;
+  background-color: #2C3E50;
+  color: #fff;
+}
+footer .container:first-child {
+  padding: 30px 0;
+}
+footer .container:last-child  {
+  width: 100%;
+  background-color: #1A252F;
+  text-align: center;
+  padding: 30px 0;
 }
 /* MEDIA QUERY */
 @media screen and (min-width:991px) {
   #about .container {
     width: 60%;
   }
+
 }
 
 @media screen and (max-width:991px) {
-  #menu-hamburger .nav-pills {
+  #menu-hamburger > ul {
     display: none;
   }
   #hamburger-show {
     display: block;
     position: relative;
-    color: #fff;
+  }
+  footer .container:first-child {
+    width: 40%;
   }
 }
 
@@ -158,5 +183,8 @@ footer {
 @media screen and (max-width:768px) {
   #portfolio .container {
     width: 70%;
+  }
+  footer .container:first-child {
+    width: 60%;
   }
 }
