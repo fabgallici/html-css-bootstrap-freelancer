@@ -5,16 +5,20 @@
   box-sizing: border-box;
 } */
 
-body {
-  background-color: pink;
+
+h1, h2 {
+  text-align: center;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #fff;
-  font-size: 16px;
+  font-size: 20px;
 }
 
+.center-star {
+  text-align: center;
+}
 /* ------------------------------- */
 /*     HEADER      */
 /* ------------------------------- */
@@ -23,6 +27,7 @@ header {
   background-color: #2C3E50;
   height: 100px;
   text-transform: uppercase;
+  text-align: center;
 }
 header > .container {
   height: 100%;
@@ -62,7 +67,6 @@ header > .container {
 #start-section {
   background-color: #1ABC9C;
   height: 679px;
-  text-align: center;
   color: #fff;
 }
 #start-section .container-fluid > img {
@@ -81,16 +85,37 @@ header > .container {
 } */
 
 /* ------------------------------- */
-/*     START SECTION      */
+/*     PORTFOLIO SECTION      */
 /* ------------------------------- */
+#portfolio {
+  text-align: center;
+}
 #portfolio .row img {
   max-width: 100%;
 }
 
+/* ------------------------------- */
+/*     ABOUT SECTION      */
+/* ------------------------------- */
 
+#about {
+  background-color: #1ABC9C;
+  margin-top: 100px;
+  color: #fff;
+}
 
+#about button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* MEDIA QUERY */
+@media screen and (min-width:991px) {
+  #about .container {
+    width: 60%;
+  }
+}
 
 @media screen and (max-width:991px) {
   #menu-hamburger ul {
@@ -100,5 +125,12 @@ header > .container {
     display: block;
     position: relative;
     color: #fff;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+  #portfolio.container {
+    width: 70%;
   }
 }
