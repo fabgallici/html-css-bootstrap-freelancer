@@ -27,6 +27,9 @@ body {
 .center-star {
   text-align: center;
 }
+.bg-green {
+  background-color: #19AB8E;
+}
 /* ------------------------------- */
 /*     HEADER      */
 /* ------------------------------- */
@@ -49,16 +52,15 @@ header > .container {
   display: none;
   position: relative;
 }
-#hamburger-show i {
+/* #hamburger-show i {
   position: relative;
-}
+} */
 .hamburger-dropdown {
   position: absolute;
   display: none;
-  right: 150px;
-  width: 150px;
+  right: 0px;
   height: 300px;
-  z-index: 99;
+  z-index: 1;
   background-color: #fff;
   padding: 5px;
   text-align: center;
@@ -102,6 +104,9 @@ header > .container {
 #portfolio .row img {
   max-width: 100%;
 }
+#portfolio .row img:hover {
+  opacity: 0.3;
+}
 
 /* ------------------------------- */
 /*     ABOUT SECTION      */
@@ -124,6 +129,12 @@ header > .container {
 #contact {
 
 }
+/* ------------------------------- */
+/*     FOOTER   */
+/* ------------------------------- */
+footer {
+  text-align: center;
+}
 /* MEDIA QUERY */
 @media screen and (min-width:991px) {
   #about .container {
@@ -132,7 +143,7 @@ header > .container {
 }
 
 @media screen and (max-width:991px) {
-  #menu-hamburger ul {
+  #menu-hamburger .nav-pills {
     display: none;
   }
   #hamburger-show {
