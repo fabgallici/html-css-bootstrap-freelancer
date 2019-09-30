@@ -27,26 +27,20 @@ body {
 .center-star {
   text-align: center;
 }
-.center-star:before {
-    display: inline-block;
-    height: 4px;
-    background-color: #000;
-    content: " ";
-    width: 90px;
-    margin: 0 auto;
-    margin-bottom: 5px;
-}
+.center-star:before,
 .center-star:after {
     display: inline-block;
     height: 4px;
     background-color: #000;
     content: " ";
-    width: 90px;
+    width: 6%;
     margin: 0 auto;
     margin-bottom: 5px;
 }
+
 .bg-green {
-  background-color: #19AB8E;
+  background: #19AB8E;
+  border-radius: 4%;
 }
 /* ------------------------------- */
 /*     HEADER      */
@@ -115,11 +109,15 @@ header > .container {
 }
 #portfolio .row img {
   max-width: 100%;
+  border-radius: 4%;
 }
 #portfolio .row img:hover {
   opacity: 0.3;
 }
+#portfolio .row > div {
+  margin-bottom: 20px;
 
+}
 /* ------------------------------- */
 /*     ABOUT SECTION      */
 /* ------------------------------- */
