@@ -16,6 +16,9 @@ h1 {
 h2 {
   font-size: 180%;
 }
+h3 {
+  font-weight: 700;
+}
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #fff;
@@ -55,6 +58,7 @@ header {
 header > .container {
   height: 100%;
   padding-top: 30px;
+  line-height: 100%;
 }
 
 #menu-hamburger {
@@ -157,13 +161,35 @@ footer {
 footer .container:first-child {
   padding: 30px 0;
 }
-footer .container:last-child  {
-  width: 100%;
+footer .container-fluid:last-child  {
   background-color: #1A252F;
-  text-align: center;
-  padding: 30px 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 80%;
 }
-/* MEDIA QUERY */
+/* Footer social links */
+.social-round {
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  line-height: 50px;
+  border-radius: 50%;
+}
+
+footer .social-round i {
+  color: white;
+  font-size: 110%;
+}
+.fix-wd-cross {
+  min-width: 55px;
+}
+footer h3 {
+  margin: 35px 0 25px 0;
+}
+/* ------------------------------- */
+/*      MEDIA QUERY       */
+/* ------------------------------- */
+
 @media screen and (min-width:991px) {
   #about .container {
     width: 60%;
