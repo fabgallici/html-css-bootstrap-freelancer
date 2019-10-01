@@ -194,7 +194,12 @@ footer .social-round i {
 footer h3 {
   margin: 35px 0 25px 0;
 }
-
+footer .social-round:hover {
+  background-color: #fff;
+}
+footer .social-round:hover i {
+  color: #2C3E50;
+}
 
 /* ------------------------------- */
 /*      MEDIA QUERY       */
