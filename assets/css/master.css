@@ -10,18 +10,22 @@ h1, h2 {
   text-align: center;
 }
 h1 {
-  font-size: 350%;
+  font-size: 310%;
   font-weight: bolder;
 }
 h2 {
-  font-size: 180%;
+  font-size: 210%;
+
 }
-h3 {
+h3, h2 {
   font-weight: 700;
 }
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #fff;
+  font-size: 20px;
+}
+i {
   font-size: 20px;
 }
 .mt-100 {
@@ -48,10 +52,7 @@ body {
 .white-star.line-star:before {
   background-color: #fff;
 }
-.bg-green {
-  background: #19AB8E;
-  border-radius: 4%;
-}
+
 /* ------------------------------- */
 /*     HEADER      */
 /* ------------------------------- */
@@ -67,18 +68,19 @@ header > .container {
   padding-top: 30px;
   line-height: 100%;
 }
-
+/* vedi regola media q per ul */
 #menu-hamburger {
 
 }
 #hamburger-show {
   display: none;
+  text-align: right;
 }
 
 .hamburger-dropdown {
   position: absolute;
   display: none;
-  right: -0px;
+  right: 10px;
   z-index: 1;
   background-color: #fff;
 }
@@ -86,7 +88,12 @@ header > .container {
 #hamburger-show:hover .hamburger-dropdown {
   display: block;
 }
-
+#menu-logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 130%;
+  line-height: 100%;
+}
 /* ------------------------------- */
 /*     START SECTION      */
 /* ------------------------------- */
@@ -100,17 +107,6 @@ header > .container {
   min-width: 150px;
   max-width: 250px;
 }
-
-
-/* .avatar-image {
-  width: 250px;
-} */
-/* .centerimg {
-  text-align: center;
-}
-#start-section .centerimg > img {
-  height: 250px;
-} */
 
 /* ------------------------------- */
 /*     PORTFOLIO SECTION      */
@@ -127,7 +123,10 @@ header > .container {
 }
 #portfolio .row > div {
   margin-bottom: 20px;
-
+}
+.bg-green {
+  background: #19AB8E;
+  border-radius: 4%;
 }
 /* ------------------------------- */
 /*     ABOUT SECTION      */
@@ -157,6 +156,8 @@ header > .container {
   height: 50px;
   line-height: 50px;
 }
+
+
 /* ------------------------------- */
 /*     FOOTER   */
 /* ------------------------------- */
@@ -194,6 +195,8 @@ footer .social-round i {
 footer h3 {
   margin: 35px 0 25px 0;
 }
+
+
 /* ------------------------------- */
 /*      MEDIA QUERY       */
 /* ------------------------------- */
@@ -206,6 +209,9 @@ footer h3 {
 }
 
 @media screen and (max-width:991px) {
+  body {
+    font-size: 16px;
+  }
   #menu-hamburger > ul {
     display: none;
   }
