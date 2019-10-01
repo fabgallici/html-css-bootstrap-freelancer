@@ -27,20 +27,27 @@ body {
 .mt-100 {
   margin-top: 100px;
 }
-.center-star {
+.line-star {
   text-align: center;
+  margin-bottom: 15px;
 }
-.center-star:before,
-.center-star:after {
+.line-star:before,
+.line-star:after {
     display: inline-block;
     height: 4px;
-    background-color: #000;
     content: " ";
-    width: 6%;
+    width: 8vw;
     margin: 0 auto;
     margin-bottom: 5px;
 }
-
+.purple-star.line-star:after,
+.purple-star.line-star:before {
+  background-color: #2C3E50;
+}
+.white-star.line-star:after,
+.white-star.line-star:before {
+  background-color: #fff;
+}
 .bg-green {
   background: #19AB8E;
   border-radius: 4%;
@@ -89,8 +96,8 @@ header > .container {
   color: #fff;
   text-align: center;
 }
-#start-section .container-fluid > img {
-  min-width: 100px;
+#start-section .container-fluid img {
+  min-width: 150px;
   max-width: 250px;
 }
 
@@ -180,6 +187,7 @@ footer .social-round i {
   color: white;
   font-size: 110%;
 }
+/* fix bordi social si sormontano low res */
 .fix-wd-cross {
   min-width: 55px;
 }
