@@ -117,15 +117,27 @@ header > .container {
   max-width: 100%;
   border-radius: 4%;
 }
-#portfolio .row img:hover {
-  opacity: 0.3;
+.bg-green {
+  background: #19AB8E;
+  border-radius: 4%;
+  position: relative;
+}
+#portfolio .bg-green:hover img {
+  opacity: 0.1;
+}
+.over-img-plus {
+  display: none;
+}
+#portfolio .bg-green:hover .over-img-plus {
+  display: block;
+  z-index: 1;
 }
 #portfolio .row > div {
   margin-bottom: 20px;
 }
-.bg-green {
-  background: #19AB8E;
-  border-radius: 4%;
+#portfolio .over-img-plus i {
+  color: #fff;
+  font-size: 63px;
 }
 /* ------------------------------- */
 /*     ABOUT SECTION      */
